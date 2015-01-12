@@ -33,6 +33,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
+        updateLabels()
+    }
+
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
+    func updateLabels() {
         var tipPercentages = [0.15, 0.2, 0.25]
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
@@ -44,11 +52,6 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-        
-    }
-
-    @IBAction func onTap(sender: AnyObject) {
-        view.endEditing(true)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -56,6 +59,8 @@ class ViewController: UIViewController {
         var defaults = NSUserDefaults.standardUserDefaults()
         var intValue = defaults.integerForKey("tipControlDefault")
         tipControl.selectedSegmentIndex = intValue
+        
+        updateLabels()
         
         super.viewWillAppear(animated)
         println("view will appear")
