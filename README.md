@@ -14,3 +14,7 @@ Required:  User can see the total amount of the bill, including tip, updated in 
 Required:  User can go to a settings menu to set the default tip amount
 
 Optional:  The default tip amount is preserved when the user reenters the application
+
+Walkthrough of all user stories:
+
+https://github.com/wacastel/tips/blob/master/TipCalculator.gif
