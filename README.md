@@ -17,4 +17,6 @@ Optional:  The default tip amount is preserved when the user reenters the applic
 
 Walkthrough of all user stories:
 
+![ScreenShot](TipCalculator.gif)
+
 https://github.com/wacastel/tips/blob/master/TipCalculator.gif
