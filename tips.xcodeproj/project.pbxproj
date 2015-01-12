@@ -13,6 +13,7 @@
 		1E26BF311A61E9E300DFDA77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E26BF301A61E9E300DFDA77 /* Images.xcassets */; };
 		1E26BF341A61E9E300DFDA77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E26BF321A61E9E300DFDA77 /* LaunchScreen.xib */; };
 		1E26BF401A61E9E300DFDA77 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E26BF3F1A61E9E300DFDA77 /* tipsTests.swift */; };
+		1E506D001A633FA1004555A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E506CFF1A633FA1004555A9 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		1E26BF391A61E9E300DFDA77 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E26BF3E1A61E9E300DFDA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E26BF3F1A61E9E300DFDA77 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		1E506CFF1A633FA1004555A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		1E26BF261A61E9E300DFDA77 /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				1E506D011A633FB3004555A9 /* ViewControllers */,
 				1E26BF291A61E9E300DFDA77 /* AppDelegate.swift */,
 				1E26BF2B1A61E9E300DFDA77 /* ViewController.swift */,
 				1E26BF2D1A61E9E300DFDA77 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				1E26BF3E1A61E9E300DFDA77 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E506D011A633FB3004555A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E506CFF1A633FA1004555A9 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				TargetAttributes = {
 					1E26BF231A61E9E300DFDA77 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 65F34V8Y8W;
 					};
 					1E26BF381A61E9E300DFDA77 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -214,6 +226,7 @@
 			files = (
 				1E26BF2C1A61E9E300DFDA77 /* ViewController.swift in Sources */,
 				1E26BF2A1A61E9E300DFDA77 /* AppDelegate.swift in Sources */,
+				1E506D001A633FA1004555A9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +420,7 @@
 				1E26BF451A61E9E300DFDA77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E26BF461A61E9E300DFDA77 /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +429,7 @@
 				1E26BF481A61E9E300DFDA77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
